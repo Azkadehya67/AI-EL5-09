@@ -1,4 +1,3 @@
-
 """
 Search Algorithm: Maze Solver
 Algoritma: Breadth-First Search (BFS) dan Depth-First Search (DFS).
@@ -14,12 +13,14 @@ MAZE = [
     [".", ".", ".", ".", "G"],
 ]
 
+
 def cari_posisi(simbol):
     for r, baris in enumerate(MAZE):
-    for c, nilai in enumerate(baris):
-        if nilai == simbol:
+        for c, nilai in enumerate(baris):
+            if nilai == simbol:
                 return (r, c)
     raise ValueError(f"Simbol {simbol} tidak ditemukan.")
+
 
 def tetangga(posisi):
     r, c = posisi
@@ -30,9 +31,10 @@ def tetangga(posisi):
 
         if 0 <= nr < len(MAZE) and 0 <= nc < len(MAZE[0]):
             if MAZE[nr][nc] != "#":
-            hasil.append((nr, nc))
+                hasil.append((nr, nc))
 
     return hasil
+
 
 def cari_jalur(nama_algoritma):
     awal = cari_posisi("S")
@@ -70,15 +72,17 @@ def cari_jalur(nama_algoritma):
 
     return None, urutan
 
+
 def tampilkan_maze(jalur):
     hasil = [baris.copy() for baris in MAZE]
 
     for r, c in jalur:
         if hasil[r][c] not in ("S", "G"):
-        hasil[r][c] = "*"
+            hasil[r][c] = "*"
 
     for baris in hasil:
         print(" ".join(baris))
+
 
 def main():
     print("=== MAZE SEARCH: BFS VS DFS ===")
@@ -96,6 +100,7 @@ def main():
             print("Jalur tidak ditemukan.")
 
     print("\nKeterangan: S = awal, G = tujuan, # = penghalang, * = jalur.")
+
 
 if __name__ == "__main__":
     main()

@@ -28,7 +28,7 @@ class RecommendationAgent:
 
 
 class RouterAgent:
-    def _init_(self):
+    def _init(self):  # Diperbaiki menjadi __init_
         self.diagnosis_agent = DiagnosisAgent()
         self.recommendation_agent = RecommendationAgent()
 
@@ -54,5 +54,5 @@ def main():
     router.proses(pesan)
 
 
-if _name_ == "_main_":
+if _name_ == "_main":  # Diperbaiki menjadi __name_ dan "_main_"
     main()

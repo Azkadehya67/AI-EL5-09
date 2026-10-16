@@ -1,38 +1,55 @@
-# Multi-Agent System — Computer Troubleshooting
+# Multi-Agent System: Diagnosis dan Rekomendasi Permasalahan Komputer
 
-## Deskripsi
-Proyek ini merupakan simulasi Multi-Agent System untuk menganalisis gangguan komputer dan memberikan rekomendasi penanganan berdasarkan masukan pengguna.
+## 1. Pendahuluan
 
-## Teknologi
-- Python
-- Visual Studio Code
+Proyek Multi-Agent System mendemonstrasikan pendekatan kecerdasan buatan yang menggunakan beberapa agen untuk bekerja sama dalam menyelesaikan suatu permasalahan.
 
-## Komponen Agen
-- **Router Agent:** Mengatur alur pemrosesan masukan.
-- **Diagnosis Agent:** Mengidentifikasi kemungkinan gangguan komputer.
-- **Recommendation Agent:** Memberikan rekomendasi berdasarkan hasil diagnosis.
+Sistem membagi proses penyelesaian masalah ke dalam beberapa agen yang memiliki tugas berbeda. Pada implementasi ini, agen yang digunakan meliputi Diagnosis Agent, Recommendation Agent, dan Router Agent.
 
-## Cara Menjalankan
-Pastikan Python sudah terpasang, kemudian jalankan perintah berikut di terminal:
+Setiap agen memiliki tanggung jawab tertentu, sedangkan sistem secara keseluruhan mengoordinasikan interaksi antaragen untuk memproses masukan pengguna, menentukan kemungkinan permasalahan komputer, dan memberikan rekomendasi yang sesuai.
+
+## 2. Persyaratan
+
+Persyaratan untuk menjalankan proyek ini meliputi:
+
+- Python versi 3.10 atau lebih baru (disarankan).
+- Editor kode, seperti Visual Studio Code.
+- Terminal atau Command Prompt.
+- Berkas sumber program `main.py`.
+
+Implementasi dasar dapat dijalankan menggunakan pustaka standar Python, kecuali jika terdapat dependensi tambahan pada kode program.
+
+## 3. Cara Menggunakan
+
+### Langkah 1: Membuka Direktori Proyek
+
+```bash
+cd 03_Multi_Agent_System
+```
+
+### Langkah 2: Menjalankan Program
 
 ```bash
 python main.py
 ```
 
-Masukkan gejala komputer, misalnya:
+### Langkah 3: Memasukkan Data
 
-```text
-komputer saya panas
-```
+Ikuti instruksi pada terminal dan masukkan informasi yang diminta oleh program.
 
-## Hasil Pengujian
-Program menampilkan proses diagnosis dan rekomendasi berdasarkan masukan pengguna.
+### Langkah 4: Mengamati Koordinasi Antaragen
 
-## Screenshot
+Perhatikan keluaran program untuk memahami bagaimana sistem memproses masukan, melakukan diagnosis, mengoordinasikan agen yang relevan, dan menghasilkan rekomendasi.
+
+## 4. Hasil
+
+Program mendemonstrasikan proses penyelesaian masalah melalui kerja sama beberapa agen dengan tugas khusus.
+
+- **Diagnosis Agent:** Mengevaluasi informasi yang diberikan untuk mengidentifikasi kemungkinan permasalahan komputer.
+- **Recommendation Agent:** Memberikan rekomendasi berdasarkan hasil diagnosis.
+- **Router Agent:** Mengatur atau mengarahkan aliran informasi di antara agen yang relevan.
+
+Dengan membagi tanggung jawab ke dalam beberapa agen, sistem menunjukkan penerapan modularitas dan koordinasi dalam penyelesaian masalah berbasis kecerdasan buatan.
+
+Hasil akhir bergantung pada aturan, alur komunikasi, dan perilaku agen yang diterapkan dalam program.
 ![Hasil Running Multi-Agent System](screenshoot/03Running.jpeg)
-
-## Kesimpulan
-Sistem berhasil menyimulasikan kerja sama tiga agen dengan tugas berbeda untuk menganalisis gangguan komputer dan memberikan rekomendasi penanganan.
-
-## Catatan
-Sistem masih menggunakan aturan sederhana dan berjalan secara lokal. Agen belum berupa model AI independen.

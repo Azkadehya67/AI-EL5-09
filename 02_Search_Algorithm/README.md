@@ -1,28 +1,54 @@
-# Search Algorithm — Maze Solver
+# Search Algorithm: Penyelesaian Labirin
 
-## Deskripsi
-Proyek ini mengimplementasikan algoritma Breadth-First Search (BFS) dan Depth-First Search (DFS) untuk mencari jalur dari titik awal menuju titik tujuan pada labirin.
+## 1. Pendahuluan
 
-## Teknologi
-- Python
-- Visual Studio Code
+Proyek Search Algorithm mendemonstrasikan penggunaan teknik pencarian dalam kecerdasan buatan untuk menyelesaikan permasalahan navigasi pada labirin.
 
-## Algoritma
-- **BFS:** Menelusuri simpul berdasarkan tingkat kedalaman dan menemukan jalur terpendek pada labirin tanpa bobot.
-- **DFS:** Menelusuri jalur lebih dalam terlebih dahulu sebelum mencoba jalur lainnya.
+Program merepresentasikan labirin sebagai ruang pencarian yang terdiri atas titik awal, titik tujuan, dan rintangan. Algoritma pencarian akan menelusuri jalur-jalur yang tersedia untuk menentukan apakah titik tujuan dapat dicapai.
 
-## Cara Menjalankan
-Pastikan Python sudah terpasang, kemudian jalankan perintah berikut di terminal:
+Proyek ini mengimplementasikan Breadth-First Search (BFS) dan Depth-First Search (DFS) untuk menunjukkan perbedaan strategi dalam menelusuri keadaan dan menemukan jalur.
 
-```bash
+## 2. Persyaratan
+
+Persyaratan untuk menjalankan proyek ini meliputi:
+
+- Python versi 3.10 atau lebih baru (disarankan).
+- Editor kode, seperti Visual Studio Code.
+- Terminal atau Command Prompt.
+- Berkas sumber program main.py.
+
+Implementasi dasar dapat dijalankan menggunakan pustaka standar Python, kecuali jika terdapat dependensi tambahan pada kode program.
+
+## 3. Cara Menggunakan
+
+### Langkah 1: Membuka Direktori Proyek
+
+bash
+cd 02_Search_Algorithm
+
+
+### Langkah 2: Menjalankan Program
+
+bash
 python main.py
-```
 
-## Hasil Pengujian
-Program menampilkan jumlah simpul yang dikunjungi, jumlah langkah jalur, dan visualisasi labirin untuk BFS dan DFS.
+
+### Langkah 3: Memilih atau Memeriksa Algoritma Pencarian
+
+Ikuti instruksi program untuk menjalankan metode pencarian yang tersedia. Jika pemilihan algoritma dilakukan langsung melalui kode sumber, periksa konfigurasi yang sesuai sebelum menjalankan program.
+
+### Langkah 4: Mengamati Proses Pencarian
+
+Perhatikan keluaran program untuk mengetahui jalur yang ditelusuri algoritma dan apakah jalur menuju titik tujuan berhasil ditemukan.
+
+## 4. Hasil
+
+Program mendemonstrasikan cara algoritma pencarian menelusuri labirin untuk menemukan jalur dari titik awal menuju titik tujuan.
+
+- *Breadth-First Search (BFS):* Menelusuri keadaan yang berdekatan secara bertingkat. Pada labirin tanpa bobot, BFS dapat menemukan jalur terpendek jika jalur tersebut tersedia.
+- *Depth-First Search (DFS):* Menelusuri satu jalur sedalam mungkin sebelum kembali ke percabangan sebelumnya. DFS dapat menemukan jalur, tetapi tidak menjamin jalur terpendek.
+
+Hasil program menunjukkan perbedaan kedua strategi dalam urutan penelusuran, penemuan jalur, dan proses penyelesaian masalah.
 
 ## Screenshot
 ![Hasil Running Search_Algorithm](screenshoot/02Running.jpeg)
-
-## Kesimpulan
-Algoritma BFS dan DFS berhasil diterapkan untuk mencari jalur dalam labirin. Keduanya memiliki strategi pencarian dan karakteristik hasil yang berbeda.

@@ -32,9 +32,9 @@ Tidak diperlukan pustaka Python tambahan apabila implementasi hanya menggunakan 
 
 Jalankan perintah berikut pada terminal:
 
-```bash
+bash
 git clone <URL-repository>
-```
+
 
 Ganti `<URL-repository>` dengan alamat repository GitHub yang digunakan.
 
@@ -56,9 +56,9 @@ Masuk ke direktori proyek yang ingin dijalankan:
 
 Jalankan berkas `main.py` dari direktori proyek yang dipilih:
 
-```bash
+bash
 python main.py
-```
+
 
 Ikuti instruksi yang ditampilkan pada terminal.
 
@@ -74,7 +74,7 @@ Ketiga proyek ini memberikan pemahaman praktis mengenai penalaran berbasis atura
 
 ## Struktur Repository
 
-```text
+text
 AI-Project-Collection/
 ├── README.md
 ├── 01_Expert_System/
@@ -89,7 +89,7 @@ AI-Project-Collection/
     └── Screenshoot
     ├── README.md
     └── main.py
-```
+
 
 ## Kontributor
 

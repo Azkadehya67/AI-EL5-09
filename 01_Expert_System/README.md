@@ -1,36 +1,58 @@
-# Expert System — Computer Troubleshooting
+# Expert System: Diagnosis Permasalahan Komputer
 
-## Deskripsi
-Program sistem pakar berbasis aturan IF-THEN untuk memberikan indikasi awal gangguan komputer berdasarkan gejala yang dimasukkan pengguna.
+## 1. Pendahuluan
 
-## Teknologi
-- Python
-- Visual Studio Code
-- Python Standard Library
+Proyek Expert System merupakan aplikasi kecerdasan buatan yang dirancang untuk mengidentifikasi kemungkinan permasalahan komputer menggunakan aturan yang telah ditentukan dan penalaran logis.
 
-## Cara Menjalankan
-```bash
+Sistem menerima informasi mengenai gejala permasalahan komputer dari pengguna, mengevaluasi gejala tersebut berdasarkan kumpulan aturan, kemudian memberikan kemungkinan diagnosis beserta rekomendasi yang relevan.
+
+Proyek ini menunjukkan bagaimana sistem pakar berbasis aturan dapat merepresentasikan pengetahuan dan menerapkan proses pengambilan keputusan sederhana pada bidang tertentu.
+
+## 2. Persyaratan
+
+Persyaratan untuk menjalankan proyek ini meliputi:
+
+- Python versi 3.10 atau lebih baru (disarankan).
+- Editor kode, seperti Visual Studio Code.
+- Terminal atau Command Prompt.
+- Berkas sumber program main.py.
+
+Implementasi dasar dapat dijalankan menggunakan pustaka standar Python, kecuali jika terdapat dependensi tambahan pada kode program.
+
+## 3. Cara Menggunakan
+
+### Langkah 1: Membuka Direktori Proyek
+
+bash
+cd 01_Expert_System
+
+
+### Langkah 2: Menjalankan Program
+
+bash
 python main.py
-```
 
-## Cara Kerja
-Program meminta pengguna menjawab pertanyaan tentang kondisi komputer. Jawaban diproses melalui aturan keputusan untuk menghasilkan diagnosis dan rekomendasi.
 
-## Pengujian Lokal
-- Sistem operasi: Windows
-- Tanggal pengujian: 16 oktober 2026
-- Input: Apakah komputer tidak menyala? (ya/tidak):
-- Output: ya
-- Status: === HASIL DIAGNOSIS ===
-Diagnosis: Gangguan kemungkinan pada sumber daya.
-Rekomendasi: Periksa kabel, stopkontak, dan power supply.
+### Langkah 3: Memasukkan Informasi
 
-Catatan: hasil merupakan indikasi awal, bukan diagnosis teknisi.
+Ikuti instruksi pada terminal dan masukkan informasi yang diminta mengenai gejala permasalahan komputer.
+
+### Langkah 4: Melihat Hasil Diagnosis
+
+Sistem akan mengevaluasi gejala yang diberikan berdasarkan aturan yang telah ditentukan, kemudian menampilkan kemungkinan diagnosis dan rekomendasi solusi.
+
+## 4. Hasil
+
+Program mendemonstrasikan proses diagnosis berbasis aturan yang meliputi:
+
+- Mengumpulkan informasi gejala dari pengguna.
+- Mencocokkan gejala dengan pengetahuan dan aturan yang telah ditentukan.
+- Menghasilkan kemungkinan diagnosis permasalahan komputer.
+- Memberikan rekomendasi berdasarkan permasalahan yang teridentifikasi.
+
+Ketepatan hasil bergantung pada kelengkapan basis pengetahuan dan aturan yang diterapkan dalam program.
+
+Sistem ini ditujukan sebagai proyek pembelajaran dan tidak dimaksudkan untuk menggantikan pemeriksaan komputer oleh tenaga profesional.
+
 ## Bukti Running
 ![Screenshot pengujian](screenshoot/01Running.png)
-
-## Kesimpulan
-Sistem berhasil menerapkan aturan IF-THEN untuk mendiagnosis kemungkinan gangguan komputer berdasarkan jawaban pengguna dan memberikan rekomendasi penanganan.
-
-## Pengembangan
-Program dapat dikembangkan dengan menambah aturan, gejala, dan basis pengetahuan yang lebih luas.

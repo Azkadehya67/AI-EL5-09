@@ -79,16 +79,16 @@ AI-Project-Collection/
 ├── README.md
 ├── 01_Expert_System/
 |   └── Screenshoot
-│   ├── main.py
-│   └── README.md
+│   ├── README.md
+│   └── main.py
 ├── 02_Search_Algorithm/
 |   └── Screenshoot
-│   ├── main.py
-│   └── README.md
+│   ├── README.md
+│   └── main.py
 └── 03_Multi_Agent_System/
     └── Screenshoot
-    ├── main.py
-    └── README.md
+    ├── README.md
+    └── main.py
 ```
 
 ## Kontributor

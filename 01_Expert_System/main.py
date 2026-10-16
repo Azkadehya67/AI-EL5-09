@@ -4,7 +4,6 @@ Expert System: Diagnosis Gangguan Komputer
 Metode: Rule-Based System dengan aturan IF-THEN.
 """
 
-
 def tanya(pertanyaan):
     while True:
         jawaban = input(pertanyaan + " (ya/tidak): ").strip().lower()
@@ -15,7 +14,6 @@ def tanya(pertanyaan):
             return False
 
         print("Input tidak valid. Masukkan ya atau tidak.")
-
 
 def diagnosis():
     print("\n=== SISTEM PAKAR DIAGNOSIS KOMPUTER ===")
@@ -45,7 +43,6 @@ def diagnosis():
     print("Diagnosis:", hasil)
     print("Rekomendasi:", saran)
     print("\nCatatan: hasil merupakan indikasi awal, bukan diagnosis teknisi.")
-
 
 if __name__ == "__main__":
     diagnosis()
